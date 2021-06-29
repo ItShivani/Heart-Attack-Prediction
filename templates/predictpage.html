@@ -1,17 +1,93 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title> Heart Attack Prediction  </title> 
+		<title> Heart Attack Prediction  </title>
+		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+  		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
+		<div class="container">
+			<div class="jumbotron">
+				<center>
+					<h3> Enter details </h3>
+				</center>
+			</div>
+		</div>
+
+		<div class="container">
 		<center>
 		<form action="{{url_for('predict')}}" method="post">
-			<h3> Enter details </h3>
+			<div class="form-group row">
+			<div class="col-md-4">
+      			<label for="age">Age:</label>
+      			<input type="age" class="form-control" id="age" placeholder="Enter age" name="age">
+    		</div>
+    		<div class="col-md-4">
+      			<label for="sex">Gender:</label>
+      			<input type="sex" class="form-control" id="sex" placeholder="Enter sex" name="sex">
+    		</div>
+    		<div class="col-md-4">
+      			<label for="cp">Cp:</label>
+      			<input type="cp" class="form-control" id="cp" placeholder="Enter cp" name="cp">
+    		</div>
+    	</div>
+    	<div class="form-group row">
+    		<div class="col-md-4">
+      			<label for="trtbps">trtbps:</label>
+      			<input type="trtbps" class="form-control" id="trtbps" placeholder="Enter trtbps" name="trtbps">
+    		</div>
+    		<div class="col-md-4">
+      			<label for="chol">Chol:</label>
+      			<input type="chol" class="form-control" id="chol" placeholder="Enter chol" name="chol">
+    		</div>
+    		<div class="col-md-4">
+      			<label for="fbs">Fbs:</label>
+      			<input type="fbs" class="form-control" id="fbs" placeholder="Enter fbs" name="fbs">
+    		</div>
+    	</div>
+    	<div class="form-group row">
+    		<div class="col-md-4">
+      			<label for="restecg">restecg:</label>
+      			<input type="restecg" class="form-control" id="restecg" placeholder="Enter restecg" name="restecg">
+    		</div>
+    		<div class="col-md-4">
+      			<label for="thalachh">thalachh:</label>
+      			<input type="thalachh" class="form-control" id="thalachh" placeholder="Enter thalachh" name="thalachh">
+    		</div>
+    		<div class="col-md-4">
+      			<label for="exng">exng:</label>
+      			<input type="exng" class="form-control" id="exng" placeholder="Enter exng" name="exng">
+    		</div>
+    	</div>
+    	<div class="form-group row">
+    		<div class="col-md-4">
+      			<label for="oldpeak">Old peak:</label>
+      			<input type="oldpeak" class="form-control" id="oldpeak" placeholder="Enter oldpeak" name="oldpeak">
+    		</div>
+    		<div class="col-md-4">
+      			<label for="slp">slp:</label>
+      			<input type="slp" class="form-control" id="slp" placeholder="Enter slp" name="slp">
+    		</div>
+    		<div class="col-md-4">
+      			<label for="caa">caa:</label>
+      			<input type="caa" class="form-control" id="caa" placeholder="Enter caa" name="caa">
+    		</div>
+    	</div>
+    		<div class="col-md-4">
+      			<label for="thall">thall:</label>
+      			<input type="thall" class="form-control" id="thall" placeholder="Enter thall" name="thall">
+    		</div>
 
-			<button type="submit"> Predict </button>
+			<button type="submit" class="btn btn-primary"> Predict </button>
 
 		</form>
-		</center>
+	</center>
+		</div>
 
 		<div>
 	   	<center>
