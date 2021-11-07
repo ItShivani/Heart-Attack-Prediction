@@ -10,8 +10,6 @@ model = pickle.load(open('heart_attack_pred_mlp_model.pickle', 'rb'))
 def home():
 	if request.method=='GET':
 		return render_template('predictpage.html')
-	else:
-    	return render_template('homepage.html')
 
 @app.route('/predict',methods=['POST'])
 def predict():
