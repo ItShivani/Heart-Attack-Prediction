@@ -6,7 +6,7 @@ Identifying your risk level to heart attacks and receiving timely treatment can 
 Check your vulnerability to the disease now on [Heart Attack Prediction](https://heart-attack-prediction-ml-in.herokuapp.com/)
 
 <br/>
-**Technologies used** :- Flask, HTML, Python(sklearn, pandas, seaborn, matplotlib, numpy)
+Technologies used :- Flask, HTML, Python(sklearn, pandas, seaborn, matplotlib, numpy)
 <br/>
-**Deployed using** Heroku 
+Deployed using: Heroku 
 <br/>
